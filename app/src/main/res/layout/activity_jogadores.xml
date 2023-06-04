@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jogadores"
+    android:background="@color/verdefundo">
+
+
+    <TextView
+        android:id="@+id/jogadoresID"
+        android:layout_width="233dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/press_start_2p"
+        android:forceDarkAllowed="false"
+        android:text="Jogadores"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonJogar"
+        android:layout_width="175dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/buttonjogar"
+        android:text="Jogar"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome4"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nome1"
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:cursorVisible="true"
+        android:hint="Jogador 1: "
+        android:inputType="text|textNoSuggestions"
+        android:selectAllOnFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jogadoresID" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nome2"
+        android:layout_width="334dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:hint="Jogador 2: "
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nome3"
+        android:layout_width="334dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:hint="Jogador 3: "
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nome4"
+        android:layout_width="334dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:hint="Jogador 4: "
+        android:inputType="text|textNoSuggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nome3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
